@@ -58,14 +58,15 @@ public class lab3_plane {
 
 
     public void assignSeat(int seatId, int cust_id){
+        if (seat[seatId-1].assigned==false) this.numEmptySeat -= 1;
+
         seat[seatId-1].assign(cust_id);
-        numEmptySeat -= 1;
     }
 
     public void unAssignSeat(int seatId){
+        if (seat[seatId-1].assigned==true) this.numEmptySeat += 1;
 
         seat[seatId-1].unAssign();
-        numEmptySeat+=1;
     }
 
 }

@@ -1,7 +1,7 @@
 public class lab3_planeseat {
 
     private int seatId;
-    private boolean assigned = false;
+    public boolean assigned = false;
     private int customerId;
 
     public lab3_planeseat(int seat_id){
@@ -30,6 +30,7 @@ public class lab3_planeseat {
             System.out.println("Seat assigned!");
         }
         else {
+
             System.out.println("Seat already assigned to a customer!");
         }
     }
